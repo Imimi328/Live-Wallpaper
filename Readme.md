@@ -38,8 +38,8 @@
             <h3 className="text-xl font-medium mt-4 mb-2">Setup</h3>
             <ol className="list-decimal pl-6 space-y-2">
                 <li>Clone the repository:
-                    <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>git clone https://github.com/teamemogi/live-wallpaper.git
-cd live-wallpaper</code></pre>
+                    <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>[git clone https://github.com/teamemogi/live-wallpaper.git](https://github.com/Imimi328/Live-Wallpaper.git)
+cd Live-Wallpaper</code></pre>
                 </li>
                 <li>Create a <code>Wallpapers</code> directory:
                     <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>mkdir Wallpapers</code></pre>
