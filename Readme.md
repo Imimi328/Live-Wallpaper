@@ -52,9 +52,6 @@ cd Live-Wallpaper</code></pre>
             <ol className="list-decimal pl-6 space-y-2">
                 <li>Run the application:
                     <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>python app.py</code></pre>
-                    <p className="text-gray-400 italic">Run as administrator if MPV socket issues occur:</p>
-                    <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>
-& C:/path/to/python.exe app.py</code></pre>
                 </li>
                 <li><strong>Select a Video</strong>: Choose a video from the listbox to preview.</li>
                 <li><strong>Set Wallpaper</strong>: Click "Set Wallpaper" to apply the video as your desktop background.</li>
