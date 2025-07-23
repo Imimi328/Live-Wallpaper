@@ -51,9 +51,9 @@ cd Live-Wallpaper</code></pre>
             <h2 className="text-2xl font-semibold text-blue-300 mb-4">Usage</h2>
             <ol className="list-decimal pl-6 space-y-2">
                 <li>Run the application:
-                    <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>python Live/app.py</code></pre>
+                    <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>python app.py</code></pre>
                     <p className="text-gray-400 italic">Run as administrator if MPV socket issues occur:</p>
-                    <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>cd Live
+                    <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>
 & C:/path/to/python.exe app.py</code></pre>
                 </li>
                 <li><strong>Select a Video</strong>: Choose a video from the listbox to preview.</li>
