@@ -1,7 +1,7 @@
 <html lang="en">
 <body style="background-color: #111; color: #ccc; font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px;">
 <header style="text-align: center; margin-bottom: 30px;">
-        <img src="https://raw.githubusercontent.com/Imimi328/Live-Wallpaper/logo/logo.png" alt="Team Emogi Logo" style="height: 60px; margin-bottom: 10px; align: center;">
+        <img src="https://raw.githubusercontent.com/Imimi328/Live-Wallpaper/logo/logo.png" alt="Team Emogi Logo" style="height: 60px; margin: 0 auto 10px auto; display: block;">
         <h1 style="color: #4ea3ff;">Live Wallpaper by Team Emogi</h1>
         <p style="font-size: 18px;">Transform your Windows desktop with dynamic video wallpapers!</p>
     </header>
