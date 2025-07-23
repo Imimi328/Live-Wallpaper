@@ -22,11 +22,7 @@
                 <li><strong>Easy Video Management</strong>: Add videos to a dedicated Wallpapers directory.</li>
             </ul>
         </section>
- <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-4">Screenshots</h2>
-            <p className="text-gray-400 italic">Placeholder: Add screenshots or a demo video here.</p>
-            <!-- Example: <img src="screenshots/app.png" alt="App Screenshot" className="w-full rounded-lg shadow-lg mb-4"> -->
-        </section>
+
  <section className="mb-8">
             <h2 className="text-2xl font-semibold text-blue-300 mb-4">Installation</h2>
             <h3 className="text-xl font-medium mb-2">Prerequisites</h3>
@@ -48,7 +44,7 @@ cd live-wallpaper</code></pre>
                 <li>Create a <code>Wallpapers</code> directory:
                     <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>mkdir Wallpapers</code></pre>
                 </li>
-                <li>Copy video files (e.g., <code>chainsaw-man-girls-moewalls-com.mp4</code>) to the <code>Wallpapers</code> directory.</li>
+                <li>Copy video files (e.g., <code>video.mp4</code>) to the <code>Wallpapers</code> directory.</li>
             </ol>
         </section>
 <section className="mb-8">
@@ -100,17 +96,7 @@ cd live-wallpaper</code></pre>
                 </li>
             </ul>
         </section>
-<section className="mb-8">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-4">Project Structure</h2>
-            <pre className="bg-gray-800 text-gray-200 p-4 rounded-lg"><code>live-wallpaper/
-├── Live/
-│   ├── app.py              # Main application script
-│   ├── logo.png            # Team Emogi logo (optional)
-│   ├── icon.ico            # System tray icon (optional)
-├── Wallpapers/             # Directory for video files
-└── README.html             # This file
-</code></pre>
-        </section>
+
 <section className="mb-8">
             <h2 className="text-2xl font-semibold text-blue-300 mb-4">Contributing</h2>
             <p>Contributions are welcome! Please:</p>
@@ -130,14 +116,9 @@ cd live-wallpaper</code></pre>
             <h2 className="text-2xl font-semibold text-blue-300 mb-4">Acknowledgments</h2>
             <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Ritesh, CEO of Team Emogi</strong>: Project lead and visionary.</li>
-                <li><strong>xAI’s Grok 3</strong>: Technical support for development and optimization.</li>
                 <li><strong>MPV Community</strong>: For the lightweight, powerful media player.</li>
                 <li><strong>PySide6</strong>: For the robust GUI framework.</li>
             </ul>
-        </section>
-<section className="mb-8">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-4">Contact</h2>
-            <p>For support or inquiries, contact <a href="mailto:ceo@teamemogi.com" className="text-blue-400 hover:underline">ceo@teamemogi.com</a> or visit <a href="https://teamemogi.com" className="text-blue-400 hover:underline">teamemogi.com</a>.</p>
         </section>
 <footer className="text-center mt-8 text-gray-400">
             <p>Made with ❤️ by Team Emogi</p>
