@@ -2,7 +2,7 @@
 <body className="bg-gray-900 text-gray-200 font-sans">
     <div className="container mx-auto p-6 max-w-4xl">
         <header className="text-center mb-8">
-            <img src="" alt="Team Emogi Logo" className="mx-auto h-24 mb-4">
+            <img src=/blob/logo/logo.png" alt="Team Emogi Logo" className="mx-auto h-24 mb-4">
             <h1 className="text-4xl font-bold text-blue-400">Live Wallpaper by Team Emogi</h1>
             <p className="text-xl mt-2">Transform your Windows desktop with dynamic video wallpapers!</p>
         </header>
