@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Wallpaper By Emogi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #1e1e2f;
+      color: #d4d4d4;
+      line-height: 1.6;
+    }
+    html { scroll-behavior: smooth; }
+    header {
+      background-color: #252537;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    header nav a {
+      color: #d4d4d4;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    header nav a:hover { color: #3b82f6; }
+    .hero {
+      background: url('https://via.placeholder.com/1920x1080.png?text=Live+Wallpaper+Demo') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 60px;
+    }
+    .hero-content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .hero h1 { font-size: 48px; margin-bottom: 20px; }
+    .hero p { font-size: 24px; margin-bottom: 30px; }
+    .btn {
+      background-color: #3b82f6;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background-color: #60a5fa;
+      transform: scale(1.05);
+    }
+    .features, .download, .about, .tutorial {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .features h2, .download h2, .about h2, .tutorial h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .feature {
+      background-color: #252537;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .feature:hover { transform: translateY(-10px); }
+    .feature i {
+      font-size: 48px;
+      color: #3b82f6;
+      margin-bottom: 20px;
+    }
+    .feature h3 { font-size: 24px; margin-bottom: 10px; }
+    .download-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .download-btn {
+      background-color: #3b82f6;
+      color: white;
+      padding: 20px 40px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #60a5fa;
+      transform: scale(1.05);
+    }
+    .download-btn i { font-size: 24px; }
+    .about-content {
+      display: flex;
+      gap: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .about-text { font-size: 18px; }
+    .tutorial {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    .tutorial ol { padding-left: 20px; }
+    footer {
+      background-color: #252537;
+      padding: 20px;
+      text-align: center;
+    }
+    .social-links a {
+      color: #d4d4d4;
+      margin: 0 15px;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+    .social-links a:hover { color: #3b82f6; }
+    @media (max-width: 768px) {
+      .feature-grid { grid-template-columns: 1fr; }
+      .download-grid { flex-direction: column; }
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/Imimi328/Live-Wallpaper/logo/logo.png" alt="Logo" style="height: 40px;">
+      <span>Live Wallpaper By Emogi</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tutorial">MPV Setup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Transform Your Desktop with Live Wallpapers</h1>
+      <p>Set any video as your desktop wallpaper with ease.</p>
+      <a href="#download" class="btn">Download Now</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2 data-aos="fade-up">Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature" data-aos="fade-up">
+        <i class="fas fa-plus"></i>
+        <h3>Easy Video Addition</h3>
+        <p>Add your favorite videos to the wallpaper library with a single click.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-play"></i>
+        <h3>Set Wallpaper Instantly</h3>
+        <p>Set any video as your desktop wallpaper with just one click.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-volume-mute"></i>
+        <h3>Mute and Loop Options</h3>
+        <p>Customize your wallpaper experience with mute and loop controls.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-tasks"></i>
+        <h3>System Tray Integration</h3>
+        <p>Access the app easily from the system tray for quick controls.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-volume-up"></i>
+        <h3>Smart Audio Muting</h3>
+        <p>Automatically mute the wallpaper audio when other apps are in focus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="download">
+    <h2 data-aos="fade-up">Download</h2>
+    <div class="download-grid">
+      <a href="https://github.com/Imimi328/Live-Wallpaper" class="download-btn" data-aos="zoom-in">
+        <i class="fab fa-github"></i>
+        <span>Source Code</span>
+      </a>
+      <a href="https://www.dropbox.com/scl/fi/tzvmoaenepftojivwphbs/LiveWallpaperPrebuild.zip?rlkey=7ibv1mx9bvsk6dsi4m1lobvtk&st=9pmf8qxw&dl=1" class="download-btn" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-download"></i>
+        <span>Download for Windows</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-content">
+      <img src="https://via.placeholder.com/200.png?text=Ritesh" alt="Ritesh" data-aos="fade-right">
+      <div class="about-text" data-aos="fade-left">
+        <h2>About the Developer</h2>
+        <p>Ritesh is the CEO of Team Emogi, a passionate developer with a focus on creating innovative desktop applications. With years of experience in software development, Ritesh aims to enhance user experiences through creative solutions like Live Wallpaper.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tutorial" class="tutorial">
+    <h2>How to Add MPV to PATH (Windows)</h2>
+    <ol>
+      <li>Download MPV from the official site or GitHub.</li>
+      <li>Extract it (e.g., to <code>C:\MPV</code>).</li>
+      <li>Copy the folder path where <code>mpv.exe</code> is located.</li>
+      <li>Search <strong>Environment Variables</strong> in Start Menu.</li>
+      <li>Click <strong>Edit system environment variables</strong>.</li>
+      <li>In the dialog, click <strong>Environment Variables</strong>.</li>
+      <li>Select <strong>Path</strong> in System Variables and click <strong>Edit</strong>.</li>
+      <li>Click <strong>New</strong> → Paste the MPV path → Click <strong>OK</strong>.</li>
+      <li>Restart terminal or PC. Type <code>mpv</code> in Command Prompt to test.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Team Emogi. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/Imimi328"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/team_emogi/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
